@@ -1,0 +1,331 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Exclusive Keyboards</title>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+	<style>
+    body
+    {
+		background-image: url("https://wallpapercave.com/wp/wp2326995.gif") ; 
+     	 background-size: cover;
+    }
+	
+		#header
+		{
+			width: 98%;
+			background-color: #4b0110c2;
+			overflow: hidden;
+  			position: fixed; /* Set the a to fixed position */
+  			top: 0; /* Position the navbar at the top of the page */
+			height:47px;
+			padding-right:35px;
+		}
+		@media only screen and (max-width: 600px) 
+		{
+  			body 
+  			{
+				  display:flex;
+    			background-color: lightblue;
+  			}
+		}
+		article
+		{
+			display: flex-box;
+			justify-content: center;
+		}
+   .right
+    {
+      font-size: 25px;
+      float: right;
+    }
+    a
+    {
+      color:yellow;
+    }
+    article
+    {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .stylish
+    {
+      font-family: Copperplate Gothic Light;
+      font-size: 35px;
+	  text-shadow: 2px 2px rgb(153, 0, 0);
+      color: 	#7CFC00;
+    }
+    .left
+    {
+      font-family: Copperplate Gothic Light;
+      font-size: 35px;
+      color: yellow;
+    }
+    #submit
+    {
+    	background-color: green;
+    	color:yellow;
+    	font-family: Bradley Hand, cursive;
+    	width: 10%;
+  		height: 30;
+    }
+    input 
+    {
+  		width: 20%;
+  		height: 30;
+	}
+	#about
+	{
+		font-family: Copperplate Gothic Light;
+      font-size: 5px;
+      color: yellow;
+	}
+	.first
+	{
+		color: white;
+		font-family: Palatino;
+		font-size: 18px;
+		background-color: black;
+		width: 40%;
+		margin: 0 auto;
+		padding: 5px 0px 5px 0px;
+	}
+	.up
+	{
+		overflow: hidden;
+		padding: 10px 10px 10px 10px;
+	}
+	a:hover 
+	{
+  		background-color: #ddd;
+  		color: black;
+	}
+	#video
+	{
+		display:block;
+		margin: auto;
+		position: absolute;
+		top: 190%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+	}
+	#products
+	{
+		width: 90%;
+		margin: auto;
+	}
+	.box1
+	{
+		background-color:orange;
+		display: inline-block;
+		width:25%;
+		border: 2px solid yellow;
+		padding: 5px;
+		margin: 5px;
+		margin-left: 110px;
+		border-radius: 5px;
+	}
+	.box2
+	{
+		background-color:orange;
+		display: inline-block;
+		width:25%;
+		border: 2px solid yellow;
+		padding: 5px;
+		margin: 5px;
+		border-radius: 5px;
+	}
+	.box3
+	{
+		background-color:orange;
+		display: inline-block;
+		width:25%;
+		border: 2px solid yellow;
+		padding: 5px;
+		margin: 5px;
+		border-radius: 5px;
+	}
+	.box1:hover
+	{
+		box-shadow: 2px 2px 18px white;
+		width: 27%;
+	}
+	.box2:hover
+	{
+		box-shadow: 2px 2px 18px white;
+		width: 27%;
+	}
+	.box3:hover
+	{
+		box-shadow: 2px 2px 18px white;
+		width: 27%;
+	}
+	.key
+	{
+		border: 2px solid yellow;
+		width: 60%;
+		margin:30px;
+		padding:20px;
+		margin: auto;
+		box-shadow: 1px 1px 8px yellow;
+	}
+	h3
+	{
+		text-align: center;
+		background-color:rgb(255, 202, 104);
+		font-family: 'Allerta Stencil';font-size: 22px;
+	}
+	h1
+	{
+		text-align: center;
+	}
+	ul{
+		margin:auto;
+	}
+	li
+	{
+		font-family: 'Alegreya';font-size: 20px;
+	}
+	.lower
+	{
+		background-color: red;
+    	color: yellow;
+    	font-family: Bradley Hand, cursive;
+    	width: 22%;
+		margin-left: 40%;
+	}
+	#contact{
+		background: rgb(39, 35, 35);
+		width: 98%;
+		padding: 15px;
+		text-align: right;
+		color: white;
+		font-size: large;
+	}
+	.space
+	{
+		height: 500px;
+	}
+	#header-img
+	{
+		width:3%;
+		height:2.7%
+		padding:4px 0px 3px 0px;
+	}
+	span{
+		color:yellow;
+		font-size: 32px;
+	}
+	</style>
+</head>
+<body>
+	<header id="header">
+    <nav id="nav-bar">
+    	<div class="up">
+		<img id="header-img" src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/06/music-logo-design.jpg"><span>&nbsp;Keyboard Corner</span>
+			<div class="right">
+			<a href="#about" class="nav-link">About&nbsp;&nbsp;</a>
+			<a href="#features" class="nav-link">Features&nbsp;&nbsp;</a>
+			<a href="#products" class="nav-link">Products&nbsp;&nbsp;</a>
+			<a href="#contact" class="nav-link">Contact</a>
+			</div>
+		</div>
+	</nav>
+	</header>
+	<br><br>
+	<article>
+		<div>
+			<form action=" https://www.freecodecamp.com/email-submit" id="form">
+        <p class="stylish">
+          <u><strong>Most Exclusive Keyboards Available</strong></u>
+        </p>
+        <p>
+     
+			<label for="email"></label>
+			<input id="email" name="email" type="email" placeholder="Enter your email address">
+        <br><br>
+			<input type="submit" id="submit" name="submit" value="Let's get Started"></input>
+			</form>
+		</p>
+		</div>
+		<br>
+	</article>
+	<article class="key">
+		<div id="about">
+			<i class="fa fa-diamond" style="font-size:28px;color:yellow">&nbsp;&nbsp;Premium Functionalities</i>
+			<h3 class="first">&nbsp;&nbsp;Designed with a perfect blend of quality and playability.</h3>
+		</div>
+		<br>
+		<div id="about">
+			<i class="fa fa-plane" style="font-size:28px;color:yellow">&nbsp;&nbsp;Fast Shipping</i>
+			<h3 class="first">&nbsp;&nbsp;Our same-day services provide reliable door-to-door delivery real quick.</h3>
+		</div>
+		<br>
+		<div id="about">
+			<i class="fa fa-thumbs-up" style="font-size:28px;color:yellow">&nbsp;&nbsp;Quality Assurance</i>
+			<h3 class="first">&nbsp;&nbsp;We deliver high-quality keyboards that operate efficiently and sound excellent.</h3>
+		</div>
+		<br>
+		<div id="features">
+		</div>
+	</article>
+	<br><br>
+	<div>
+		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/zDDA140rQrg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+<br><hr><br>
+<div id="products">
+	<div class="box1">
+		<hr>
+		<h3>SYNTHESIZERS</h3>
+		<h1>$1200</h1>
+		<ul>
+			<li>Amazing Sound Playback</li>
+			<li>Light Weight Synthesizer</li>
+			<li>USB Audio/MIDI</li>
+		</ul>
+		<br>
+		<button class="lower" type="submit">SELECT</button>
+		<hr>
+	</div>
+	<div class="box2">
+		<hr>
+		<h3>PORTABLE KEYBOARDS</h3>
+		<h1>$900</h1>
+		<ul>
+			<li>Touch-sensitive Keyboard</li>
+			<li>Stylish and Comprehensive</li>
+			<li>Auto Accompaniment</li>
+		</ul>
+		<br>
+		<button class="lower" type="submit">SELECT</button>
+		<hr>
+	</div>
+	<div class="box3">
+		<hr>
+		<h3>PIANOS</h3>
+		<h1>$1000</h1>
+		<ul>
+			<li>Luxury Pianica</li>
+			<li>Simple and Portable</li>
+			<li>Wide 3-Octave Range</li>
+		</ul>
+		<br>
+		<button class="lower" type="submit">SELECT</button>
+		<hr>
+	</div>	
+</div>
+<br><br>
+<div class="space"></div>
+	<footer id="contact">
+		<a href="#">Privacy</a>
+		<a href="#">Terms</a>
+		<a href="#">Contact</a>
+		<br>
+		&copy; Copyright 2021, Keyboard Corner 
+	</footer>
+</body>
+</html>
